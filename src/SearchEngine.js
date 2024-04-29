@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./SearchEngine.css";
 
-
 export default function SearchEngine() {
     const [city, setCity] = useState("");
     const [weatherData, setWeatherData] = useState(null);
