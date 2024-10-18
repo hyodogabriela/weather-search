@@ -40,10 +40,10 @@ export default function SearchEngine() {
             <h2>The weather in {city} is</h2>
             <div className="UlContainer">
               <ul>
-                <li>Temperature: {weatherData.main.temp} °C</li>
+                <li>Temperature: {Math.round(weatherData.main.temp)} °C</li>
                 <li>Description: {weatherData.weather[0].description}</li>
                 <li>Humidity: {weatherData.main.humidity}%</li>
-                <li>Wind: {weatherData.wind.speed} m/s</li>
+                <li>Wind: {Math.round(weatherData.wind.speed)} m/s</li>
                 <li>Icon: <img src={`http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`} alt="weather icon" /></li>
               </ul>
             </div>
